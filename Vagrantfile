@@ -3,9 +3,9 @@
 
 Vagrant.configure(2) do |config|
 
-  config.vm.define "ci_box" do |node|
+  config.vm.define "cibox" do |node|
     node.vm.box = "ubuntu/wily64"
-    node.vm.hostname = "ci_box"
+    node.vm.hostname = "cibox"
     node.vm.network "private_network", ip: "192.168.50.30"
 	
 	node.vm.provider :virtualbox do |vb|
